@@ -2,6 +2,7 @@
 Bem-vindos ao projeto prático da disciplina de **Engenharia de Software** do curso de **Sistemas de Informação** da **Faculdade de Apucarana**.
 
 **Professor:** Dr. Luiz Henrique Custódio Mendes Marques
+
 **Semestre:** 7º Semestre | **Ano Letivo:** 2026/1
 
 ---
