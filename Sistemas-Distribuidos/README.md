@@ -32,37 +32,12 @@ O projeto será construído de forma incremental e avaliará o seu domínio sobr
 * O Servidor deve processar as mensagens, atualizar o saldo e responder.
 * *Critério de Aceite:* O professor enviará 10 transações sequenciais usando um script próprio. O saldo final deve bater!
 
-### 🚦 Entrega 2: Sobrevivendo ao Caos (Avaliação Formativa 2)
+### 🚦 Entrega 2: Multithreading e docker (Avaliação bimestral)
 **Data de Entrega:** 09/04/2026
 **Objetivo:** Multithreading, Sincronização e Conteinerização.
 * O seu servidor agora receberá transações simultâneas. Você deverá implementar **Threads/Processos** e garantir o isolamento da memória usando mecanismos de **Sincronização e exclusão mútua** (Mutex, Locks).
 * O servidor deve ser entregue obrigatoriamente rodando dentro de um **Container Docker**. Inclua o `Dockerfile` no repositório.
-* *Critério de Aceite:* Teste de estresse com 50 clientes simultâneos. Se o saldo não bater ao final por conta de *race conditions*, a entrega não será validada. O projeto deve rodar com um simples `docker build` e `docker run`.
+* *Critério de Aceite:* Ser resistente a  *race conditions*. O projeto deve rodar com um simples `docker build` e `docker run`.
 
-### ⚔️ Entrega 3: A Rinha Final (Avaliação Bimestral)
-**Data de Entrega:** 23/04/2026
-**Objetivo:** Orquestração local e gargalo de recursos.
-* O sistema deve rodar com **múltiplas réplicas (instâncias)** do seu servidor, balanceadas por um Load Balancer (Nginx, HAProxy, etc.) configurado via Docker Compose.
-* O estado (saldos) precisará ser compartilhado entre essas instâncias (pode usar um Redis ou banco de dados leve em outro contêiner).
-* **A Maldade:** Seus contêineres de servidor terão limites severos de CPU e Memória configurados no Compose.
-* *Critério de Aceite:* A aplicação será bombardeada por um *Stress Tester*. A avaliação considerará a consistência dos dados, a disponibilidade (quantas conexões caíram) e a performance sob recursos limitados.
 
 ---
-
-## 💡 Dicas de Ouro
-
-* **Comece Simples:** Faça a comunicação cliente-servidor funcionar com 1 cliente enviando 1 byte antes de tentar enviar estruturas complexas.
-* **Cuidado com Deadlocks:** Ao usar Locks ou Mutex, garanta que você sempre vai liberá-los, mesmo que ocorra um erro na transação.
-* **Estude Serialização:** Converter inteiros e decimais para arrays de bytes e vice-versa é a chave da Entrega 1.
-* **Teste sua API localmente:** Não espere o dia da entrega para descobrir que seu servidor "quebra" quando duas pessoas enviam comandos no mesmo milissegundo.
-
----
-
-## 🛠️ Como Submeter
-1. Faça um Fork/Clone deste repositório.
-2. Crie uma pasta com o nome e RA dos integrantes do grupo (ex: `Grupo_Joao123_Maria456_Pedro789`).
-3. Façam os commits regularmente, evidenciando o trabalho em equipe.
-4. Para cada entrega, crie uma Tag no Git (ex: `v1.0-formativa1`) ou faça o push até às 23h59 da data estipulada.
-5. As instruções de como rodar o seu projeto (comandos Docker) devem estar rigorosamente documentadas no README do seu grupo.
-
-Boa sorte e que a concorrência esteja a favor do seu grupo! 🚀
