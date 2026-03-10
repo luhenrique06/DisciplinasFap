@@ -34,7 +34,7 @@ O projeto acompanhará as datas oficiais de avaliações e os tópicos do Plano 
 * **Entregáveis no Repositório:**
   * Documento detalhando a ONG escolhida e o problema a ser resolvido.
   * Levantamento de Requisitos Funcionais, Não Funcionais.
-  * Mapeamento do sistema através de Histórias de Usuários e Diagramas de Casos de Uso.
+  * Mapeamento do sistema através de Histórias de Usuários.
 
 **📦 Entrega 2: Apresentação, Design e Planejamento (Avaliação Bimestral)**
 * **Data da apresentação:** 28/04/2026
