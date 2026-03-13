@@ -29,9 +29,33 @@ Seu objetivo é modelar o esquema e implementar o controle de concorrência util
 ### 📦 Entrega 1: Modelagem e SQL Avançado (Avaliação Formativa 1)
 **Data de Entrega:** 27/03/2026 
 **Objetivo:** Criar o esquema físico e as consultas analíticas.
-* **Requisitos:** * Scripts DDL para criar as tabelas (Eventos, Setores, Assentos/Ingressos, Clientes e Reservas) respeitando as regras de Normalização.
+* **Requisitos:** * Scripts DDL para criar obrigatoriamente  as tabela:
+   - Eventos
+   - Setores
+   - Assentos/Ingressos
+   - Clientes
+   - Reservas respeitando as regras de Normalização.
   * Uso correto de Primary Keys, Foreign Keys, e Constraints de unicidade.
-  * Criação de pelo menos duas *Views* utilizando **JOINs avançados e subconsultas correlacionadas** (ex: Relatório de Ocupação por Setor e Relatório de Receita).
+  * Criação obrigatória de seeds com pelo menos 2 eventos, 4 setores, 200 assentos/ingressos, 10 clientes
+  * Criação de pelo menos duas *seleções* utilizando **JOINs avançados e subconsultas correlacionadas** (ex: Relatório de Ocupação por Setor e Relatório de Receita).
+
+**Descrição das Consultas (Selects):**
+
+* **1. JOIN Básico (Relatório de Ingressos do Cliente):**
+  * **Objetivo:** Mostrar quem comprou qual ingresso para a portaria do evento.
+  * **O que deve ser feito:** Criar uma consulta utilizando `INNER JOIN` para conectar no mínimo 4 tabelas: `Clientes`, `Reservas`, `Assentos` e `Setores`.
+  * **Retorno esperado:** A consulta deve exibir o Nome do Cliente, o Número do Assento, o Nome do Setor e a Data da Reserva.
+
+* **2. JOIN com Agrupamento (Relatório Simples de Vendas por Setor):**
+  * **Objetivo:** Descobrir a quantidade de assentos vendidos por área do festival.
+  * **O que deve ser feito:** Criar uma consulta conectando a tabela de `Setores` com a tabela de `Assentos` (usando `INNER JOIN`). Filtrar apenas os assentos que estão com status de "Reservado" ou "Vendido".
+  * **Retorno esperado:** Utilizar a cláusula `GROUP BY` pelo nome do setor e a função `COUNT()` para mostrar o Nome do Setor e o Total de Ingressos Vendidos nele.
+
+* **3. Subconsulta Correlacionada (Contagem de Compras no Perfil do Cliente):**
+  * **Objetivo:** Listar todos os clientes da base e mostrar quantos ingressos cada um adquiriu, usando uma subconsulta ao invés de um JOIN.
+  * **O que deve ser feito:** Fazer um `SELECT` na tabela de `Clientes` (consulta externa). Na lista de colunas desse `SELECT`, incluir uma subconsulta entre parênteses que faça um `COUNT(*)` na tabela de `Reservas`.
+  * **O "Pulo do Gato":** A correlação acontece porque a subconsulta de reservas precisa ser filtrada (`WHERE`) comparando o ID do cliente da reserva com o ID do cliente da consulta externa.
+  
 * **Critério de Aceite:** O professor executará o script SQL limpo e inserirá uma carga inicial de dados de teste sem erros. As *Views* devem retornar os resultados corretos.
 
 ### 🚦 Entrega 2: Transações e Isolamento (Avaliação Formativa 2)
