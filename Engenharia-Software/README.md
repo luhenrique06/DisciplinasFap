@@ -29,7 +29,7 @@ O projeto acompanhará as datas oficiais de avaliações e os tópicos do Plano 
 ### 🛠️ 1º Bimestre: Concepção, Requisitos e Arquitetura
 
 **📦 Entrega 1: Entendimento do Cliente (Avaliação Formativa 1)**
-* **Data:** 28/03/2026
+* **Data:** 17/03/2026
 * **Objetivo:** Elicitação de requisitos e modelagem inicial do problema.
 * **Entregáveis no Repositório:**
   * Documento detalhando a ONG escolhida e o problema a ser resolvido.
