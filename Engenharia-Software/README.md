@@ -40,9 +40,8 @@ O projeto acompanhará as datas oficiais de avaliações e os tópicos do Plano 
 * **Data da apresentação:** 28/04/2026
 * **Objetivo:** Estruturar como o sistema será construído e gerenciado.
 * **Entregáveis no Repositório:**
-  * Apresentação da arquitetura do sistema baseada em estilos arquiteturais e padrões de design (SOLID, GOF).
+  * Desenho da arquitetura no padrão de microsserviços.
   * Diagrama de Sequência das principais funcionalidades.
-  * Comprovação da adoção de um processo/modelo ágil (Scrum ou Kanban) configurado em uma ferramenta como Trello, Jira ou GitHub Projects.
   * Consolidação das histórias a serem desenvolvidas
 
 ---
