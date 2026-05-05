@@ -49,7 +49,7 @@ O projeto acompanhará as datas oficiais de avaliações e os tópicos do Plano 
 ### 🧪 2º Bimestre: Construção, Testes e Qualidade
 
 **📦 Entrega 3: O Core e o TDD (Avaliação Formativa 1)**
-* **Data:** 16/06/2026
+* **Data:** 26/05/2026
 * **Objetivo:** Início da codificação com foco em testes unitários.
 * **Entregáveis no Repositório:**
   * Entrega da primeira versão funcional do código (MVP).
