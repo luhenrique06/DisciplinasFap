@@ -59,8 +59,6 @@ O projeto acompanhará as datas oficiais de avaliações e os tópicos do Plano 
 * **Data:** 23/06/2026
 * **Objetivo:** Entrega final do software com garantia de qualidade ponta a ponta.
 * **Entregáveis no Repositório:**
-  * Código final do sistema rodando (preferencialmente em nuvem/hospedado).
-  * Implementação de **Testes End-to-End (E2E) utilizando Selenium** (ou similar, como Cypress/Playwright).
   * Relatório de **Cobertura de Testes**.
   * Documentação básica sobre a Observabilidade do sistema (como os erros serão monitorados em produção).
 
