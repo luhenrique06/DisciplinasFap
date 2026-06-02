@@ -59,8 +59,10 @@ O projeto acompanhará as datas oficiais de avaliações e os tópicos do Plano 
 * **Data:** 23/06/2026
 * **Objetivo:** Entrega final do software com garantia de qualidade ponta a ponta.
 * **Entregáveis no Repositório:**
-  * Relatório de **Cobertura de Testes**.
-  * Documentação básica sobre a Observabilidade do sistema (como os erros serão monitorados em produção).
+  * MVP.
+  * Testes
+  * Documentação
+
 
 ---
 
