@@ -31,10 +31,6 @@ Escolha **um** dos provedores, todos com camada gratuita (*free tier*):
 5. **Configurar um CNAME** apontando um domínio (gratuito) para o endereço da sua aplicação na nuvem, de modo que o sistema seja acessível por um nome amigável em vez do IP. Dica, pode ser o NGROK -> instalar na maquina da cloud e subir o dominio free
 
 
-## Dicas para conseguir um domínio gratuito (e configurar o CNAME)
-
-> ⚠️ **Importante:** um domínio de topo de verdade (`.com`, `.com.br`, etc.) **totalmente grátis praticamente não existe mais**. O antigo Freenom (`.tk`, `.ml`, `.ga`...) deixou de oferecer registros gratuitos em 2023. O que existe hoje são **subdomínios gratuitos** ou **domínios reais grátis por tempo limitado** (ex.: via pacotes de estudante).
-
 
 ### GitHub Student Developer Pack (domínio "real" grátis)
 
